@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网站</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Highlight.js CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <span>张功维</span>
+        </div>
+        <div class="nav-links">
+            <a href="#home">首页</a>
+            <a href="#about">关于</a>
+            <a href="#skills">技能</a>
+            <a href="#ai-chat">AI对话</a>
+        </div>
+        <div class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </div>
+    </nav>
+
+    <!-- 照片轮播 -->
+    <section id="home" class="carousel-section">
+        <div class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="slide1.jpg" alt="Slide 1">
+                    <div class="slide-caption">热爱编程，热爱生活</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="slide2.jpg" alt="Slide 2">
+                    <div class="slide-caption">专注于Web开发与人工智能</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="slide3.jpg" alt="Slide 3">
+                    <div class="slide-caption">让我们一起探索技术的无限可能</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="slide4.jpg" alt="Slide 4">
+                    <div class="slide-caption">创新技术，引领未来</div>
+                </div>
+            </div>
+            <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+            <div class="carousel-dots"></div>
+        </div>
+    </section>
+
+    <!-- 个人简介 -->
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>关于我</h2>
+                <div class="personal-info">
+                    <div class="info-group">
+                        <div class="info-item">
+                            <i class="fas fa-user"></i>
+                            <span><strong>性别：</strong>男</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-calendar"></i>
+                            <span><strong>年龄：</strong>25岁</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-birthday-cake"></i>
+                            <span><strong>出生年月：</strong>1998.01</span>
+                        </div>
+                    </div>
+                    <div class="info-group">
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span>电话：+86 123-4567-8900</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>邮箱：example@email.com</span>
+                        </div>
+                    </div>
+                    <div class="education">
+                        <h3><i class="fas fa-graduation-cap"></i> 教育经历</h3>
+                        <div class="education-item">
+                            <span class="year">2016 - 2020</span>
+                            <span class="degree">本科学位 - 计算机科学与技术</span>
+                            <span class="school">某某大学</span>
+                        </div>
+                        <div class="education-item">
+                            <span class="year">2020 - 2023</span>
+                            <span class="degree">硕士学位 - 人工智能</span>
+                            <span class="school">某某大学</span>
+                        </div>
+                    </div>
+                </div>
+                <p>你好！我是张功维，一名充满热情的全栈开发工程师。我专注于Web开发和人工智能领域，
+                致力于将创新技术转化为实用的解决方案。在我的职业生涯中，我始终保持着对新技术的
+                探索精神，并且热衷于将这些技术应用到实际项目中。</p>
+                <p>除了编程，我也热衷于技术分享和团队协作。我相信技术不仅仅是解决问题的工具，
+                更是连接人与人之间的桥梁。欢迎与我交流各类技术话题！</p>
+            </div>
+            <div class="about-image">
+                <img src="profile.jpg" alt="张功维的个人照片">
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能展示 -->
+    <section id="skills" class="skills-section">
+        <h2>技能与兴趣</h2>
+        <div class="skills-container">
+            <!-- 技能卡片将通过JavaScript动态生成 -->
+        </div>
+    </section>
+
+    <!-- AI对话界面 -->
+    <section id="ai-chat" class="chat-section">
+        <div class="chat-header">
+            <img src="deepseek.png" alt="Deepseek Logo" class="deepseek-logo">
+            <h3>Powered by Deepseek</h3>
+        </div>
+        <div class="chat-container">
+            <div class="chat-history">
+                <!-- 示例对话 -->
+                <div class="chat-message ai-message">
+                    <img src="deepseek.png" alt="AI" class="avatar">
+                    <div class="message-content">
+                        <div class="message-text">你好！我是DeepSeek AI助手，很高兴为您服务。</div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <textarea placeholder="输入消息..."></textarea>
+                <div class="input-actions">
+                    <input type="file" id="file-upload" hidden>
+                    <button class="upload-btn" title="上传文件"><i class="fas fa-paperclip"></i></button>
+                    <button class="voice-btn" title="语音输入"><i class="fas fa-microphone"></i></button>
+                    <button class="send-btn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部社交媒体 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>联系方式</h4>
+                <p><i class="fas fa-envelope"></i> example@email.com</p>
+                <p><i class="fas fa-phone"></i> +86 123-4567-8900</p>
+            </div>
+            <div class="footer-section">
+                <h4>社交媒体</h4>
+                <div class="social-links">
+                    <a href="https://v.douyin.com/iyoL5LeL/" target="_blank" class="social-link" title="抖音">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.xiaohongshu.com/user/profile/61a99143000000001000cfea" target="_blank" class="social-link" title="小红书">
+                        <i class="fas fa-book-open"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>快速链接</h4>
+                <nav class="footer-nav">
+                    <a href="#home">首页</a>
+                    <a href="#about">关于</a>
+                    <a href="#skills">技能</a>
+                    <a href="#ai-chat">AI对话</a>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 张功维的个人网站. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html> 
